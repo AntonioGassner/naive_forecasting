@@ -1,0 +1,186 @@
+[
+  {
+    "approach": "Seasonal_Naive",
+    "variant": "weekly",
+    "horizon": 3,
+    "MAE": 5.514796257019043,
+    "RMSE": 10.226797103881836,
+    "MAPE": 12.98387336730957,
+    "timestamp": "2025-08-31T16:16:49.293311+00:00",
+    "params": {
+      "season": "weekly",
+      "day_slot": 288,
+      "n_pred": 12
+    }
+  },
+  {
+    "approach": "Seasonal_Naive",
+    "variant": "weekly",
+    "horizon": 6,
+    "MAE": 5.520370960235596,
+    "RMSE": 10.236689567565918,
+    "MAPE": 13.017988204956055,
+    "timestamp": "2025-08-31T16:16:49.293322+00:00",
+    "params": {
+      "season": "weekly",
+      "day_slot": 288,
+      "n_pred": 12
+    }
+  },
+  {
+    "approach": "Seasonal_Naive",
+    "variant": "weekly",
+    "horizon": 9,
+    "MAE": 5.525945663452148,
+    "RMSE": 10.246538162231445,
+    "MAPE": 13.049310684204102,
+    "timestamp": "2025-08-31T16:16:49.293325+00:00",
+    "params": {
+      "season": "weekly",
+      "day_slot": 288,
+      "n_pred": 12
+    }
+  },
+  {
+    "approach": "Seasonal_Naive",
+    "variant": "weekly",
+    "horizon": 12,
+    "MAE": 5.5312628746032715,
+    "RMSE": 10.255364418029785,
+    "MAPE": 13.076949119567871,
+    "timestamp": "2025-08-31T16:16:49.293327+00:00",
+    "params": {
+      "season": "weekly",
+      "day_slot": 288,
+      "n_pred": 12
+    }
+  },
+  {
+    "approach": "Hour_of_Week",
+    "variant": "weekly_lambda_0.0",
+    "horizon": 3,
+    "MAE": 4.163904666900635,
+    "RMSE": 7.385180473327637,
+    "MAPE": 10.690377235412598,
+    "timestamp": "2025-08-31T16:16:49.684274+00:00",
+    "params": {
+      "season": "weekly",
+      "day_slot": 288,
+      "n_pred": 12,
+      "lambda_resid": 0.0
+    }
+  },
+  {
+    "approach": "Hour_of_Week",
+    "variant": "weekly_lambda_0.0",
+    "horizon": 6,
+    "MAE": 4.168800354003906,
+    "RMSE": 7.398181915283203,
+    "MAPE": 10.723869323730469,
+    "timestamp": "2025-08-31T16:16:49.684283+00:00",
+    "params": {
+      "season": "weekly",
+      "day_slot": 288,
+      "n_pred": 12,
+      "lambda_resid": 0.0
+    }
+  },
+  {
+    "approach": "Hour_of_Week",
+    "variant": "weekly_lambda_0.0",
+    "horizon": 9,
+    "MAE": 4.173387050628662,
+    "RMSE": 7.410044193267822,
+    "MAPE": 10.753950119018555,
+    "timestamp": "2025-08-31T16:16:49.684285+00:00",
+    "params": {
+      "season": "weekly",
+      "day_slot": 288,
+      "n_pred": 12,
+      "lambda_resid": 0.0
+    }
+  },
+  {
+    "approach": "Hour_of_Week",
+    "variant": "weekly_lambda_0.0",
+    "horizon": 12,
+    "MAE": 4.177289962768555,
+    "RMSE": 7.419893264770508,
+    "MAPE": 10.779687881469727,
+    "timestamp": "2025-08-31T16:16:49.684287+00:00",
+    "params": {
+      "season": "weekly",
+      "day_slot": 288,
+      "n_pred": 12,
+      "lambda_resid": 0.0
+    }
+  },
+  {
+    "approach": "Holt_Winters",
+    "variant": "ANA_single",
+    "horizon": 3,
+    "MAE": 2.4162275791168213,
+    "RMSE": 5.277529716491699,
+    "MAPE": 3.887326955795288,
+    "timestamp": "2025-08-31T16:16:49.965582+00:00",
+    "params": {
+      "season": "weekly",
+      "day_slot": 288,
+      "n_pred": 12,
+      "variant": "ANA",
+      "sliding_stride": null,
+      "fast_mode": true
+    }
+  },
+  {
+    "approach": "Holt_Winters",
+    "variant": "ANA_single",
+    "horizon": 6,
+    "MAE": 2.5749998092651367,
+    "RMSE": 6.3870930671691895,
+    "MAPE": 4.56522274017334,
+    "timestamp": "2025-08-31T16:16:49.965592+00:00",
+    "params": {
+      "season": "weekly",
+      "day_slot": 288,
+      "n_pred": 12,
+      "variant": "ANA",
+      "sliding_stride": null,
+      "fast_mode": true
+    }
+  },
+  {
+    "approach": "Holt_Winters",
+    "variant": "ANA_single",
+    "horizon": 9,
+    "MAE": 2.3890349864959717,
+    "RMSE": 5.963393211364746,
+    "MAPE": 5.001654624938965,
+    "timestamp": "2025-08-31T16:16:49.965594+00:00",
+    "params": {
+      "season": "weekly",
+      "day_slot": 288,
+      "n_pred": 12,
+      "variant": "ANA",
+      "sliding_stride": null,
+      "fast_mode": true
+    }
+  },
+  {
+    "approach": "Holt_Winters",
+    "variant": "ANA_single",
+    "horizon": 12,
+    "MAE": 2.3947362899780273,
+    "RMSE": 5.684157848358154,
+    "MAPE": 5.032729148864746,
+    "timestamp": "2025-08-31T16:16:49.965596+00:00",
+    "params": {
+      "season": "weekly",
+      "day_slot": 288,
+      "n_pred": 12,
+      "variant": "ANA",
+      "sliding_stride": null,
+      "fast_mode": true
+    }
+  }
+]

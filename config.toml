@@ -1,0 +1,48 @@
+# Application configuration for running naive baselines
+
+[general]
+# Path to the dataset CSV (TPGNN format). Relative to project root.
+data_path = "naive_approaches/V_228.csv"
+# Samples per day (PeMS 5-min → 288)
+day_slot = 288
+# Train/Val/Test split in days
+splits = [34, 5, 5]
+# Maximum prediction horizon (number of steps ahead)
+n_pred = 12
+# Horizons to report in the output files
+horizons = [3, 6, 9, 12]
+# Season string used across methods ("weekly", "daily", or integer slots)
+season = "weekly"
+
+# Output files
+output_json = "results/naive_approaches_results.json"
+output_csv  = "results/naive_approaches_wide.csv"
+
+[toggles]
+run_seasonal_naive = true
+run_hour_of_week   = true
+run_holt_winters   = true
+
+[seasonal_naive]
+# Optionally override season here; falls back to [general].season if omitted
+# season = "weekly"
+
+[hour_of_week]
+# Residual correction strength (0.0 = pure historical average)
+lambda_resid = 0.0
+# Phase offset in slots for week alignment (rarely needed)
+start_offset = 0
+# If true, also compute correlation (not used in CSV/JSON summaries)
+compute_corr = false
+# Optionally override season here; falls back to [general].season if omitted
+# season = "weekly"
+
+[holt_winters]
+# ETS variant: "ANA" (ETS(A,N,A)) or "AAA" (ETS(A,A,A))
+variant = "ANA"
+# Sliding re-fit stride in samples (0 = single-origin fit)
+sliding_stride = 0
+# Fast approximation mode (seasonal naive + optional trend for AAA)
+fast_mode = true
+# Optionally override season here; falls back to [general].season if omitted
+# season = "weekly"
